@@ -1,0 +1,248 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section .row {
+        text-align: center;
+    }
+    
+    .hero-section img {
+        margin-top: 2rem;
+    }
+    
+    .admin-sidebar {
+        margin-bottom: 2rem;
+    }
+    
+    .table-responsive {
+        border: 1px solid #dee2e6;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 66px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p.lead {
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .table {
+        font-size: 0.875rem;
+    }
+    
+    .table th, .table td {
+        padding: 0.5rem;
+    }
+    
+    /* Mobile Navigation */
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        border-radius: 0.35rem;
+        box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container, .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 0.25rem;
+        border-radius: 0.35rem !important;
+    }
+    
+    /* Mobile Forms */
+    .form-row .col, .form-row .col-auto {
+        margin-bottom: 1rem;
+    }
+    
+    /* Mobile Tables */
+    .table-responsive {
+        font-size: 0.75rem;
+    }
+    
+    .badge {
+        font-size: 0.65rem;
+    }
+    
+    /* Mobile Product Grid */
+    .product-card .card-body {
+        padding: 0.75rem;
+    }
+    
+    .product-card .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .product-card:hover {
+        transform: none;
+        box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background: transparent;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .navbar-brand {
+        font-weight: 700;
+    }
+    
+    .card {
+        box-shadow: 0 0.3rem 2rem 0 rgba(58, 59, 69, 0.1);
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: #2d3748;
+        color: #e2e8f0;
+    }
+    
+    .card-header {
+        background-color: #4a5568;
+        color: #e2e8f0;
+        border-bottom-color: #718096;
+    }
+    
+    .table {
+        color: #e2e8f0;
+    }
+    
+    .table th {
+        background-color: #4a5568;
+        color: #e2e8f0;
+    }
+    
+    .table-hover tbody tr:hover {
+        background-color: #4a5568;
+        color: #e2e8f0;
+    }
+}
+
+/* Print Optimization */
+@media print {
+    .navbar, .btn, .no-print {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+    }
+    
+    body {
+        padding-top: 0 !important;
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 12pt;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #000 !important;
+    }
+    
+    .table {
+        font-size: 10pt;
+    }
+    
+    .text-primary { color: #000 !important; }
+    .text-success { color: #000 !important; }
+    .text-danger { color: #000 !important; }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        padding: 1rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 360px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        font-size: 0.875rem;
+        padding: 0.375rem 0.75rem;
+    }
+    
+    .card-body {
+        padding: 0.5rem;
+    }
+}
